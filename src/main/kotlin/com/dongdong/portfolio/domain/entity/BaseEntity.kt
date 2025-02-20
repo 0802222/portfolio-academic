@@ -8,7 +8,6 @@ import java.time.LocalDateTime
 
 @MappedSuperclass
 abstract class BaseEntity {
-    abstract class BaseEntity {
 
         @CreatedDate //JPA 엔티티가 생성된 시간을 자동으로 셋팅해줌
         @Column(nullable = false, updatable = false)
@@ -22,6 +21,4 @@ abstract class BaseEntity {
         @LastModifiedDate //@CreatedDate랑 세트로 보면됨, 데이터 생성일시, 마지막 수정일시를 지정해주는 기능을 함
         @Column(nullable = false) //updateable = true은 기본값이기 때문에 코드에 별도의 파라미터로 지정하진 않음
         var updatedDateTime: LocalDateTime = LocalDateTime.now()
-
-    }
 }
