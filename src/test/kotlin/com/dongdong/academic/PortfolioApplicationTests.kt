@@ -1,4 +1,4 @@
-package com.dongdong.portfolio
+package com.dongdong.academic
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
